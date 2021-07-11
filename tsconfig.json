@@ -15,7 +15,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@devhub/*": ["libs/*"],
+      "@devhub/nativescript": ["xplat/nativescript/index.ts"],
+      "@devhub/nativescript/*": ["xplat/nativescript/*"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

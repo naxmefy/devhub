@@ -1,18 +1,22 @@
 {
   "npmScope": "devhub",
-  "implicitDependencies": {
-    "angular.json": "*",
-    "package.json": "*",
-    "tsconfig.json": "*",
-    "tslint.json": "*",
-    "nx.json": "*"
+  "affected": {
+    "defaultBase": "master"
   },
-  "projects": {
-    "libs": {
-      "tags": []
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
     },
-    "xplat": {
-      "tags": []
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
     }
-  }
+  },
+  "projects": {}
 }
